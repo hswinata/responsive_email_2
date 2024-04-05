@@ -66,6 +66,11 @@
           display: block !important;
           visibility: visible !important;
         }
+
+        .cards__mobile-visible {
+          display: initial !important;
+          visibility: visible !important;
+        }
       }
     </style>
   </head>
@@ -272,7 +277,7 @@
                           </td>
                         </tr>
 
-                        <!--2. Spacer-->
+                        <!--spacer-->
                         <tr>
                           <td
                             class="spacer"
@@ -281,12 +286,11 @@
                           ></td>
                         </tr>
 
-                        <!--3. Cards-->
+                        <!--3. Cards Row 1-->
                         <tr style="outline: thin solid">
                           <td>
                             <table cellpadding="0" cellspacing="0" width="100%">
                               <tbody>
-                                <!--Cards: row 1-->
                                 <tr>
                                   <td style="width: 30px"></td>
 
@@ -412,14 +416,17 @@
                                 </tr>
 
                                 <!--Card 2: Bowls Mobile-->
-                                <tr style="display: none; visibility: hidden">
+                                <tr>
                                   <td style="width: 30px"></td>
                                   <td
+                                    class="mobile-visible"
                                     width="250px"
                                     style="
                                       max-width: 250px;
                                       text-align: center;
                                       vertical-align: top;
+                                      display: none;
+                                      visibility: hidden;
                                     "
                                   >
                                     <table
@@ -473,12 +480,217 @@
 
                                   <td style="width: 30px"></td>
                                 </tr>
-
-                                <!--Cards: row 2-->
-                                <tr></tr>
                               </tbody>
                             </table>
                           </td>
+                        </tr>
+
+                        <!--4. Cards Row 2-->
+                        <tr style="outline: thin solid">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td style="width: 30px"></td>
+
+                                  <!--Card 3: Plates-->
+                                  <td
+                                    width="250px"
+                                    style="
+                                      max-width: 250px;
+                                      text-align: center;
+                                      vertical-align: top;
+                                    "
+                                  >
+                                    <table
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tr
+                                        style="outline: thin solid"
+                                        height="200px"
+                                      >
+                                        <td>
+                                          <img
+                                            src="https://olo-images-live.imgix.net/dd/dd91fc53f7124f86ae7833eede4a802f.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=b08d9fd5cc269c84f2b223298752819d"
+                                            alt="Plates"
+                                            height="150"
+                                            width="auto"
+                                            style="
+                                              height: 150px;
+                                              width: auto;
+                                              max-width: 250px;
+                                            "
+                                          />
+                                        </td>
+                                      </tr>
+                                    </table>
+
+                                    <p
+                                      class="card__subtitle"
+                                      style="
+                                        font-size: 18px;
+                                        font-weight: 100;
+                                        color: #df1066;
+                                      "
+                                    >
+                                      Plates
+                                    </p>
+                                    <p
+                                      class="card__text"
+                                      style="
+                                        font-size: 14px;
+                                        font-weight: 100;
+                                        line-height: 1.5;
+                                        padding: 0 15px;
+                                        color: #6d6d6d;
+                                      "
+                                    >
+                                      Get 1 Side and 2 Entrees
+                                    </p>
+                                  </td>
+
+                                  <!--Card 4: A la carte Desktop-->
+                                  <td
+                                    class="mobile-hidden"
+                                    width="250px"
+                                    style="
+                                      max-width: 250px;
+                                      text-align: center;
+                                      vertical-align: top;
+                                    "
+                                  >
+                                    <table
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tr
+                                        style="outline: thin solid"
+                                        height="200px"
+                                      >
+                                        <td>
+                                          <img
+                                            src="https://olo-images-live.imgix.net/27/272ad84a8af2494ba7cb2eecbe0c2b7e.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=fb32dcae532d307a7bbc5d7cfd83278a"
+                                            alt="A la carte"
+                                            height="150"
+                                            width="auto"
+                                            style="
+                                              height: 150px;
+                                              width: auto;
+                                              max-width: 250px;
+                                            "
+                                          />
+                                        </td>
+                                      </tr>
+                                    </table>
+
+                                    <p
+                                      class="card__subtitle"
+                                      style="
+                                        font-size: 18px;
+                                        font-weight: 100;
+                                        color: #df1066;
+                                      "
+                                    >
+                                      A la carte desktop
+                                    </p>
+                                    <p
+                                      class="card__text"
+                                      style="
+                                        font-size: 14px;
+                                        font-weight: 100;
+                                        line-height: 1.5;
+                                        padding: 0 20px;
+                                        color: #6d6d6d;
+                                      "
+                                    >
+                                      Be creative and get individual Entrees and
+                                      Sides
+                                    </p>
+                                  </td>
+
+                                  <td style="width: 30px"></td>
+                                </tr>
+
+                                <!--Card 4: A la carte mobile-->
+                                <tr>
+                                  <td style="width: 30px"></td>
+                                  <td
+                                    class="mobile-visible"
+                                    width="250px"
+                                    style="
+                                      max-width: 250px;
+                                      text-align: center;
+                                      vertical-align: top;
+                                      display: none;
+                                      visibility: hidden;
+                                    "
+                                  >
+                                    <table
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tr
+                                        style="outline: thin solid"
+                                        height="200px"
+                                      >
+                                        <td>
+                                          <img
+                                            src="https://olo-images-live.imgix.net/27/272ad84a8af2494ba7cb2eecbe0c2b7e.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=fb32dcae532d307a7bbc5d7cfd83278a"
+                                            alt="A la carte"
+                                            height="150"
+                                            width="auto"
+                                            style="
+                                              height: 150px;
+                                              width: auto;
+                                              max-width: 250px;
+                                            "
+                                          />
+                                        </td>
+                                      </tr>
+                                    </table>
+
+                                    <p
+                                      class="card__subtitle"
+                                      style="
+                                        font-size: 18px;
+                                        font-weight: 100;
+                                        color: #df1066;
+                                      "
+                                    >
+                                      A la carte mobile
+                                    </p>
+                                    <p
+                                      class="card__text"
+                                      style="
+                                        font-size: 14px;
+                                        font-weight: 100;
+                                        line-height: 1.5;
+                                        padding: 0 15px;
+                                        color: #6d6d6d;
+                                      "
+                                    >
+                                      Includes 1 Side and 1 Entree
+                                    </p>
+                                  </td>
+
+                                  <td style="width: 30px"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <!--spacer-->
+                        <tr>
+                          <td
+                            class="spacer2"
+                            height="40"
+                            style="height: 40px"
+                          ></td>
                         </tr>
 
                         <!--4. Button-->
@@ -518,12 +730,12 @@
                           </td>
                         </tr>
 
-                        <!--4. Spacer-->
+                        <!--spacer-->
                         <tr>
                           <td height="10px" style="height: 10px"></td>
                         </tr>
 
-                        <!--6. Spacer-->
+                        <!--spacer2-->
                         <tr>
                           <td
                             class="spacer2"
