@@ -11,6 +11,13 @@
     <meta name="”x-apple-disable-message-reformatting”" />
     <title>Panda Express!</title>
     <style>
+      @media (orientation: landscape) and (max-width: 667px) {
+        .main-graphic {
+          width: 100% !important;
+          max-width: 400px;
+        }
+      }
+
       @media only screen and (max-width: 480px) {
         .browserView {
           font-size: 11px !important;
@@ -80,7 +87,11 @@
   </head>
 
   <body
-    style="background-color: #f6f6f7; font-family: Helvetica, Arial, sans-serif"
+    style="
+      background-color: #f6f6f7;
+      font-family: Helvetica, Arial, sans-serif;
+      width: 100%;
+    "
   >
     <!--Preheader-->
     <span
@@ -179,9 +190,11 @@
                         <img
                           class="main-graphic"
                           src="https://olo-images-live.imgix.net/f7/f791dba4fc48450faa24d51159af3f93.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=4aff9382798fe00546bbbc128217ad08"
-                          alt="Assortment of Chinese food"
+                          alt="Assortment of Panda Expressfood"
+                          max-width="500px"
+                          height="auto"
                           width="600px"
-                          style="height: auto; width: 600px"
+                          style="height: auto; width: 600px; max-width: 600px"
                         />
                       </a>
                     </div>
@@ -205,26 +218,21 @@
                 <!--Header: content-->
                 <tr>
                   <td style="min-width: 30px"></td>
-                  <td
+
+                  <p
                     class="header-text"
                     style="
-                      color: #0a283f;
+                      color: #df1066;
                       font-family: Helvetica, Arial, sans-serif;
                       font-size: 30px;
-                      font-weight: 500;
-                      letter-spacing: 0.5;
                       line-height: 1.5;
-                      width: 100%;
                       text-align: center;
                       margin: 0;
                     "
-                    width="100%"
                   >
-                    <span class="header" style="color: #df1066"
-                      >Straight from California: Panda Express
-                      <span></span>!</span
-                    >
-                  </td>
+                    Straight from California: Panda Express!
+                  </p>
+
                   <td style="min-width: 30px"></td>
                 </tr>
 
@@ -247,7 +255,6 @@
                   <td>
                     <table cellpadding="0" cellspacing="0" width="100%">
                       <tbody>
-                        <!-------List of content in tr:------>
                         <!--1. Content text-->
                         <tr>
                           <td>
@@ -273,10 +280,6 @@
                                     🐼🥡 #PandaExpress #Foodora #Austria
                                   </p>
                                 </td>
-                                <td style="width: auto"></td>
-                              </tr>
-                              <tr>
-                                <td height="20" style="height: 20px"></td>
                               </tr>
                             </tbody>
                           </td>
@@ -286,13 +289,22 @@
                         <tr>
                           <td
                             class="spacer"
-                            height="10"
-                            style="height: 10"
+                            height="20"
+                            style="height: 20"
                           ></td>
                         </tr>
 
+                        <tr>
+                          <td style="max-width: 500px; text-align: center">
+                            <img
+                              style="max-width: 120px"
+                              src="https://cdn.freebiesupply.com/logos/large/2x/panda-express-logo-1-logo-png-transparent.png"
+                            />
+                          </td>
+                        </tr>
+
                         <!--3. Cards Row 1-->
-                        <tr style="outline: thin solid">
+                        <tr>
                           <td>
                             <table cellpadding="0" cellspacing="0" width="100%">
                               <tbody>
@@ -313,10 +325,7 @@
                                       cellspacing="0"
                                       width="100%"
                                     >
-                                      <tr
-                                        style="outline: thin solid"
-                                        height="200px"
-                                      >
+                                      <tr height="200px">
                                         <td>
                                           <img
                                             src="https://olo-images-live.imgix.net/42/421be062653b41c48049275caa0c6a5c.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=6c27fd79e0edbd0d678b3d65f03fad52"
@@ -373,10 +382,7 @@
                                       cellspacing="0"
                                       width="100%"
                                     >
-                                      <tr
-                                        style="outline: thin solid"
-                                        height="200px"
-                                      >
+                                      <tr height="200px">
                                         <td>
                                           <img
                                             src="https://olo-images-live.imgix.net/72/7288570f72a54140a41afdcfbd0e8980.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=5c543defe38946e36a8694d0b149fda4"
@@ -439,10 +445,7 @@
                                       cellspacing="0"
                                       width="100%"
                                     >
-                                      <tr
-                                        style="outline: thin solid"
-                                        height="200px"
-                                      >
+                                      <tr height="200px">
                                         <td>
                                           <img
                                             src="https://olo-images-live.imgix.net/72/7288570f72a54140a41afdcfbd0e8980.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=5c543defe38946e36a8694d0b149fda4"
@@ -467,7 +470,7 @@
                                         color: #df1066;
                                       "
                                     >
-                                      Bowls Mobile
+                                      Bowls
                                     </p>
                                     <p
                                       class="card__text"
@@ -491,7 +494,7 @@
                         </tr>
 
                         <!--4. Cards Row 2-->
-                        <tr style="outline: thin solid">
+                        <tr>
                           <td>
                             <table cellpadding="0" cellspacing="0" width="100%">
                               <tbody>
@@ -512,10 +515,7 @@
                                       cellspacing="0"
                                       width="100%"
                                     >
-                                      <tr
-                                        style="outline: thin solid"
-                                        height="200px"
-                                      >
+                                      <tr height="200px">
                                         <td>
                                           <img
                                             src="https://olo-images-live.imgix.net/dd/dd91fc53f7124f86ae7833eede4a802f.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=b08d9fd5cc269c84f2b223298752819d"
@@ -571,10 +571,7 @@
                                       cellspacing="0"
                                       width="100%"
                                     >
-                                      <tr
-                                        style="outline: thin solid"
-                                        height="200px"
-                                      >
+                                      <tr height="200px">
                                         <td>
                                           <img
                                             src="https://olo-images-live.imgix.net/27/272ad84a8af2494ba7cb2eecbe0c2b7e.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=fb32dcae532d307a7bbc5d7cfd83278a"
@@ -638,10 +635,7 @@
                                       cellspacing="0"
                                       width="100%"
                                     >
-                                      <tr
-                                        style="outline: thin solid"
-                                        height="200px"
-                                      >
+                                      <tr height="200px">
                                         <td>
                                           <img
                                             src="https://olo-images-live.imgix.net/27/272ad84a8af2494ba7cb2eecbe0c2b7e.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=fb32dcae532d307a7bbc5d7cfd83278a"
@@ -666,7 +660,7 @@
                                         color: #df1066;
                                       "
                                     >
-                                      A la carte mobile
+                                      A la carte
                                     </p>
                                     <p
                                       class="card__text"
@@ -763,8 +757,6 @@
                             />
                           </td>
                         </tr>
-
-                        <!-------List of content in tr:------->
                       </tbody>
                     </table>
                   </td>
@@ -774,7 +766,7 @@
               </tbody>
             </table>
 
-            <!--Mock Footer-->
+            <!--Footer-->
             <table cellpadding="0" cellspacing="0" width="100%">
               <tbody>
                 <tr>
@@ -933,7 +925,7 @@
                                       cellspacing="0"
                                       width="100%"
                                     >
-                                      <tr height="60px">
+                                      <tr height="30px">
                                         <td
                                           class="text-align-mobile"
                                           style="text-align: center"
@@ -982,6 +974,54 @@
                           </td>
                         </tr>
 
+                        <!--Company-->
+                        <tr>
+                          <td>
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td style="width: 30px"></td>
+                                  <td
+                                    width="250px"
+                                    style="
+                                      max-width: 250px;
+                                      text-align: center;
+                                      vertical-align: top;
+                                    "
+                                  >
+                                    <table
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tr height="30px">
+                                        <td
+                                          class="text-align-mobile"
+                                          style="text-align: center"
+                                        >
+                                          <p
+                                            style="
+                                              font-size: 13px;
+                                              color: #999999;
+                                            "
+                                          >
+                                            Foodora Austria GmbH / foodora.at
+                                            Barichgasse 38 / Top 1.4, 1030 Wien
+                                            FN 309771x - Handelsgericht Wien
+                                            UID-Nummer: ATU64215469
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+
+                                  <td style="width: 30px"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
                         <!--spacer-->
                         <tr>
                           <td
@@ -1011,121 +1051,6 @@
 
                   <td width="60" style="min-width: 60px; width: 60px"></td>
                 </tr>
-              </tbody>
-            </table>
-
-            <!--Footer-->
-            <table cellpadding="0" cellspacing="0" width="100%">
-              <tbody>
-                <tr>
-                  <td
-                    class="mobile-hidden"
-                    width="100"
-                    style="min-width: 100px; width: 100px"
-                  ></td>
-                  <td>
-                    <table>
-                      <tbody>
-                        <tr>
-                          <!--Foodora logo-->
-                          <td>
-                            <table cellpadding="0" cellspacing="0" width="100%">
-                              <tbody>
-                                <tr>
-                                  <td
-                                    class="footer_logo-padding"
-                                    height="10px"
-                                    style="height: 10px"
-                                  ></td>
-                                </tr>
-                                <tr>
-                                  <td class="footer__foodora-logo">
-                                    <a href="www.foodora.at">
-                                      <img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Foodora_logo.png/1600px-Foodora_logo.png?20201120155438"
-                                        alt="Foodora logo"
-                                        style="height: auto; width: 110px"
-                                    /></a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                          <!--Vertical spacer-->
-                          <td class="mobile-hidden" width="15px"></td>
-
-                          <!--Need a hand text: Desktop-->
-                          <td class="mobile-hidden">
-                            <table>
-                              <tr>
-                                <td>
-                                  <p
-                                    class="stardewContact"
-                                    style="
-                                      font-size: 16px;
-                                      line-height: 1.2;
-                                      color: #999999;
-                                    "
-                                  >
-                                    Lorem ipsum dolor sit atmet Lorem ipsum
-                                    dolor sit atmet
-                                  </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td></td>
-                              </tr>
-                            </table>
-                          </td>
-                          <td></td>
-                        </tr>
-
-                        <!--Mobile Visible Part:-->
-                        <tr
-                          class="mobile-visible"
-                          style="visibility: hidden; display: none"
-                        ></tr>
-                        <tr
-                          class="mobile-visible"
-                          style="visibility: hidden; display: none"
-                        >
-                          <td>
-                            <p
-                              class="needAHand"
-                              style="
-                                color: #e496f4;
-                                font-size: 20px;
-                                line-height: 0;
-                                text-align: center;
-                              "
-                            >
-                              Need A Hand?
-                            </p>
-                            <p
-                              class="stardewContact"
-                              style="
-                                font-size: 14px;
-                                line-height: 1.2;
-                                text-align: center;
-                                padding: 0 80px;
-                                color: #999999;
-                              "
-                            >
-                              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                              Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            </p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                  <td
-                    class="mobile-hidden"
-                    width="100"
-                    style="min-width: 100px; width: 100px"
-                  ></td>
-                </tr>
-                <tr height="40" style="min-height: 40px; height: 40px"></tr>
               </tbody>
             </table>
           </td>
